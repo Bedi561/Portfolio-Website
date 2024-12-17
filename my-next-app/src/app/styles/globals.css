@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #141414;
+  color: white;
+}
+
+/* Custom gradient animation */
+@keyframes gradientFlow {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.gradient-animate {
+  animation: gradientFlow 8s ease infinite alternate;
+}
+
