@@ -1,10 +1,9 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  images: {
-    domains: ['*'], // Allows images from any domain
+// next.config.js
+module.exports = {
+  reactStrictMode: true,
+  // Next.js automatically detects the App Router from the `app/` folder
+  webpack(config) {
+    config.resolve.modules.push(__dirname + '/src');
+    return config;
   },
-  output: 'standalone', // This is necessary for Netlify serverless functions
 };
-
-export default nextConfig;
