@@ -3,7 +3,8 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['*'], // Allow images from all domains
+    // List domains you want to allow for images
+    domains: ['*'], // Replace with other domains if needed
   },
 };
 
