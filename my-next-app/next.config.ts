@@ -1,11 +1,10 @@
-// next.config.js
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    // List domains you want to allow for images
-    domains: ['*'], // Replace with other domains if needed
+    domains: ['*'], // Allows images from any domain
   },
+  output: 'standalone', // This is necessary for Netlify serverless functions
 };
 
 export default nextConfig;
